@@ -1,0 +1,84 @@
+---
+title: ""
+---
+
+## Recent Performance
+
+```{r include=FALSE}
+library(openxlsx)
+library(ggplot2)
+library(tidyverse)
+library(dplyr)
+library(dygraphs)
+library(xts)
+library(reshape2)
+library(data.table)
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+read.xlsx("Timelog.xlsx")%>%
+  mutate(date = as.Date(date,origin = "1899-12-30"))%>%
+  mutate(hours = end - start)%>%
+  select(date, hours, tag)%>%
+  dcast(., date~tag,value.var="hours",sum,na.rm=T)%>%
+  as.data.table()%>%
+  as.xts.data.table()%>%
+  dygraph() %>% 
+  dyStackedBarChart()%>%
+  dyRangeSelector()%>%
+  dyAxis("y", label = "Hours")
+```
+
+```{r echo=F}
+last_tr= tail(file.info("./Timelog.xlsx")$mtime)
+```
+
+*Last update time: `r last_tr`*
+
+## Recent Ongoing Projects
+
+**Master's Thesis**: Using textual analysis to identify whether there is a gender gap in financial white collar crime
+
+*Jan. 2023 - Present, Bergen*
+
+> Methods: Textual analysis, web crawling, R
+
+**Research Assistant** at NHH
+
+*Jan. 2023 - Present, Bergen*
+
+**Research Assistant** for CoronaNet Project
+
+*Nov. 2022 - Present, remote*
+
+> Job descriptions for RA in CoronaNet Research Project:
+>
+> -   Conducted internet-based research on Denmark national and subnational policies in response to COVID-19. Documented policies using Qualtrics software.
+>
+> -   Data validation: Applied expert knowledge of coding practices and procedures to re-coding existing dataset entries.
+>
+> -   Data cleaning: Check for systematic dataset errors using R-Studio and fixed erroneous entries in the Qualtrics survey. Requires ability to process a high volume of repetitive information with high accuracy.
+>
+> -   Policy Checker: Evaluated dataset completeness in a given policy area across several countries by comparing with other data sources.
+
+# Previous Projects
+
+**Course Project**: Detecting fraud through textual analysis of Wikileaks Cables
+
+> This project focuses on the diplomatic cables released by Wikileaks that were originally sent to the United States from Nigeria, which referred to Shell, the oil company. By analysing through all those targeted cables, we seek to identify unethical practices committed by Shell.
+
+**Course Project**: Python dashboard for global CO2 emissions by using data from World Bank
+
+**Course Project**: Simulation modelling for retailer
+
+**Course Project**: Simulation modelling for wheather Wuhan is ready for the possible second wave of COVID-19 or an outbreak of other similar viruses in terms of the number of isolation bed
+
+**Course Project**: Detecting oil trade suspected of violating UN's embargoes
+
+> This study investigated UN's oil embargos, the event data of conflicts and peace agreements on sanctioned countries or regions, and the stock prices of oil companies to figure out which companies may violated the embargos and sold oil products to sanctioned countries. This study closely followed the methodology illustrated in Della Vigna & La Ferrara's paper - *Detecting illegal arms trade* - published in 2010.
+
+**Course Project**: Stock trading advice application with built-in logistic regression model and textual analysis of relevant information obtained from Twitter
+
+> The dashboard provides a user-friendly interface and allows users to customise their exploration of the links between the vast amount of stock market-related information on Twitter and stock prices, supportting their stock trading decisions.
+
+**Course Project**: Evaluating COVID-19 effect on different industries in the US based upon textual analysis of 10-k filings published on SEC

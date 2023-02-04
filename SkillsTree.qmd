@@ -1,0 +1,29 @@
+---
+title: ""
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+library(collapsibleTree)
+library(dplyr)
+library(networkD3)
+library(readxl)
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+skill = read_excel("Skills_tree.xlsx")
+
+skill %>%
+  collapsibleTreeSummary(
+    hierarchy = c("Skills_Type","Proficiency_Level","Skills_Name"),
+    width = 800,
+    root = "Skills_Type",
+#    attribute = "Proficiency_Level",
+#    fill = "Color",
+#    fillByLevel = T,
+    tooltip = T,
+    zoomable = F,
+    nodeSize = "leafCount",
+    collapsed = FALSE
+  )
+
+```

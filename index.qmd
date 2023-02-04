@@ -1,0 +1,25 @@
+---
+title: "YI's World"
+about:
+  template: jolla
+  image: Bust.jpg
+  links:
+    - icon: linkedin
+      #text: LinkedIn
+      href: https://www.linkedin.com/in/wendiyi
+    - icon: github
+      #text: Github
+      href: https://github.com/windyyih
+    - icon: envelope
+      #text: Email
+      href: mailto:windyyih@outlook.com
+---
+
+我是易，现居挪威的中国人。
+
+I'm YI. I'm from China and currently residing in Norway.
+
+Jeg heter YI. Jeg er fra Kina og for tiden bosatt i Norge.
+
+
+<font color=gray>*So you've stumbled upon me... Nice to meet you. You can also find me elsewhere.*</font>

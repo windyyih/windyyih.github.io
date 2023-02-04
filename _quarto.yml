@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Yi's World"
+  navbar:
+    background: primary
+    right:
+#      - href: about.qmd
+#        text: About
+      - href: CV.qmd
+        text: CV
+      - href: Working_On.qmd
+        text: Ongoing
+      - href: SkillsTree.qmd
+        text: SkillsTree 
+        
+
+format:
+  html:
+    theme: journal
+    css: styles.css
+    toc: true
+
+editor: visual
+
