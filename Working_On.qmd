@@ -33,7 +33,7 @@ read.xlsx("Timelog.xlsx")%>%
 last_tr= tail(file.info("./Timelog.xlsx")$mtime)
 ```
 
-*Last update time: `r last_tr`*
+*Last updated: `r last_tr`*
 
 ## Recent Ongoing Projects
 

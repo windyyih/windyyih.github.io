@@ -13,4 +13,4 @@ knitr::include_graphics("CV_Version_main.pdf")
 last_cv= tail(file.info("./CV_Version_main.pdf")$mtime)
 ```
 
-*Last update time: `r last_cv`*
+*Last updated: `r last_cv`*
