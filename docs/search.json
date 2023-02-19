@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "CV.html",
+    "href": "CV.html",
+    "title": "Yi's World",
+    "section": "",
+    "text": "Last updated: 2023-01-24 23:35:56"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "YI’s World",
+    "section": "",
+    "text": "我是易，现居挪威的中国人。\nI’m YI. I’m from China and currently residing in Norway.\nJeg heter YI. Jeg er fra Kina og for tiden bosatt i Norge.\nSo you’ve stumbled upon me… Nice to meet you. You can also find me elsewhere."
+  },
+  {
+    "objectID": "Working_On.html",
+    "href": "Working_On.html",
+    "title": "Yi's World",
+    "section": "",
+    "text": "Last updated: 2023-02-20 00:18:57"
+  },
+  {
+    "objectID": "Working_On.html#recent-ongoing-projects",
+    "href": "Working_On.html#recent-ongoing-projects",
+    "title": "Yi's World",
+    "section": "Recent Ongoing Projects",
+    "text": "Recent Ongoing Projects\nMaster’s Thesis: Using textual analysis to identify whether there is a gender gap in financial white collar crime\nJan. 2023 - Present, Bergen\n\nMethods: Textual analysis, web crawling, R\n\nResearch Assistant at NHH\nJan. 2023 - Present, Bergen\nResearch Assistant for CoronaNet Project\nNov. 2022 - Present, remote\n\nJob descriptions for RA in CoronaNet Research Project:\n\nConducted internet-based research on Denmark national and subnational policies in response to COVID-19. Documented policies using Qualtrics software.\nData validation: Applied expert knowledge of coding practices and procedures to re-coding existing dataset entries.\nData cleaning: Check for systematic dataset errors using R-Studio and fixed erroneous entries in the Qualtrics survey. Requires ability to process a high volume of repetitive information with high accuracy.\nPolicy Checker: Evaluated dataset completeness in a given policy area across several countries by comparing with other data sources."
+  }
+]
